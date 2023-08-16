@@ -14,7 +14,7 @@ This Python code performs web scraping to search for book links on the Library G
    - This formatting is used for constructing the search query URL.
      
 3. Constructing the Query URL:
-   - The base URL is set to "https://libgen.li/index.php?req=".
+   - The base URL is set to "https://libgen.is/index.php?req=".
    - The formatted tags are added to the base URL to create the complete query URL.
      
 4. Sending a Request and Parsing the Page:
@@ -23,13 +23,13 @@ This Python code performs web scraping to search for book links on the Library G
    
 5. Extracting Book Links:
    - The soup.select() function is used to select specific elements from the parsed HTML content.
-   - In this case, it looks for all <a> tags within <td> elements within <tr> elements within a <tbody> element within a table.
+   - In this case, it looks for all 'a' tags within 'td' elements within 'tr' elements.
    - The selected anchor tags are stored in the links list.
      
 6. Filtering and Displaying Links:
    - The code selects the first 1000 links from the links list (or fewer if there are fewer than 1000 links).
    - For each anchor tag in the first 1000 links, it retrieves the 'href' attribute (the URL) using the .get('href') method.
-   - It checks if the retrieved URL contains the string 'libgen.rocks'.
+   - It checks if the retrieved URL contains the string 'library.lol'.
    - If the condition is met, it prints the URL and a line of hyphens to visually separate the links.
      
 The code is essentially searching for book links related to the user's input on the Library Genesis website and printing the links that match the 'libgen.rocks' domain.
