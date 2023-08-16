@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 entry = input("Enter book name: ")
 tags = entry.split()
 formatted_tags = '+'.join(tags)
-base_url = "https://libgen.si/index.php?req="
+base_url = "https://libgen.is/index.php?req="
 query_url = f'{base_url}{formatted_tags}'
 page = requests.get(query_url)
 soup = BeautifulSoup(page.content, 'html.parser')
