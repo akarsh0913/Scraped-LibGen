@@ -32,4 +32,4 @@ This Python code performs web scraping to search for book links on the Library G
    - It checks if the retrieved URL contains the string 'library.lol'.
    - If the condition is met, it prints the URL and a line of hyphens to visually separate the links.
      
-The code is essentially searching for book links related to the user's input on the Library Genesis website and printing the links that match the 'libgen.rocks' domain.
+The code is essentially searching for book links related to the user's input on the Library Genesis website and printing the links that match the 'library.lol' domain.
