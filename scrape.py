@@ -14,8 +14,7 @@ page = requests.get(query_url)
 soup = BeautifulSoup(page.content, 'html.parser')
 
 #selecting each tr(table row) from the parsed soup object
-trtags=soup.select('table tr')
-
+trtags = soup.select('table tr')
 
 #function for link fetching
 def link():
@@ -44,7 +43,6 @@ def authorname():
     if authmatches:
         auth_name = authmatches.group(1)
         print('Author Name : ', auth_name)
-
 
 #main loop
 for trtag in trtags:
