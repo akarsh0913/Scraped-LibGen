@@ -39,7 +39,7 @@ class ScrapedLibGen:
 			match_string = 'library.lol'
 			if match_string in href_links:
 				return href_links
-			
+
 
 	def book_name(self, tr_tag):
 		book_name_element = tr_tag.select_one('td[width="500"] a')
