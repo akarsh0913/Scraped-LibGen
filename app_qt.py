@@ -3,8 +3,6 @@ import re
 import requests
 from bs4 import BeautifulSoup
 import urllib.parse
-from PyQt6.QtWidgets import QApplication, QMainWindow, QWidget, QVBoxLayout, QLabel, QLineEdit, QPushButton, QTextEdit
-from PyQt6.QtCore import Qt 
 
 class ScrapedLibGen(QMainWindow):
     def __init__(self):
